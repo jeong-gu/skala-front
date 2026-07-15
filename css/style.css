@@ -67,6 +67,14 @@ mark {
     font-size: 20px;
 }
 
+.home-link {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #c4b5fd;
+    border-radius: 999px;
+    background-color: #f5f3ff;
+}
+
 table {
     width: 100%;
     margin: 18px 0;
@@ -112,6 +120,47 @@ footer {
     border: 1px solid #d9e2ec;
     border-radius: 12px;
     box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.page-header h1,
+.page-header h2 {
+    flex: 1;
+    margin: 0;
+}
+
+.nav-layout,
+.content-wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.nav-layout nav {
+    flex: 3;
+}
+
+.nav-layout aside {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+    background-color: #f8fbff;
+}
+
+.nav-layout aside h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.content-wrapper main {
+    flex: 1;
 }
 
 .trip-card {
@@ -251,4 +300,22 @@ textarea {
 .btn-submit:active,
 .btn-reset:active {
     transform: translateY(1px);
+}
+
+@media (max-width: 760px) {
+    .container,
+    footer {
+        margin: 16px;
+        padding: 18px;
+    }
+
+    .nav-layout,
+    .page-header,
+    .content-wrapper {
+        display: block;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }
