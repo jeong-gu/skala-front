@@ -66,3 +66,85 @@ mark {
 .back-link {
     font-size: 20px;
 }
+
+table {
+    width: 100%;
+    margin: 18px 0;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th {
+    color: #123c69;
+    background-color: #dbeafe;
+}
+
+th,
+td {
+    padding: 12px;
+    border-color: #b8c7d9;
+    vertical-align: middle;
+}
+
+img,
+video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+footer {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 20px 28px;
+    color: #475569;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.trip-card {
+    margin: 12px;
+    padding: 12px;
+    border: 1px solid #d9e2ec;
+    background-color: #f8fbff;
+    border-radius: 10px;
+}
+
+.trip-card figcaption {
+    margin-top: 8px;
+    color: #475569;
+    font-size: 14px;
+}
+
+.profile-list {
+    padding: 16px 16px 16px 36px;
+    border-radius: 8px;
+}
+
+.favorite-list {
+    background-color: #f0fdf4;
+}
+
+.dislike-list {
+    background-color: #fff1f2;
+}
+
+.todo-list {
+    background-color: #fff7ed;
+}
+
+.center-page {
+    text-align: center;
+}
