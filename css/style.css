@@ -68,6 +68,9 @@ mark {
 }
 
 .home-link {
+    position: absolute;
+    top: 18px;
+    right: 24px;
     display: inline-block;
     padding: 8px 14px;
     border: 1px solid #c4b5fd;
@@ -113,26 +116,14 @@ footer {
 }
 
 .container {
+    position: relative;
     max-width: 960px;
     margin: 40px auto;
-    padding: 28px;
+    padding: 54px 28px 28px;
     background-color: #ffffff;
     border: 1px solid #d9e2ec;
     border-radius: 12px;
     box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-}
-
-.page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-}
-
-.page-header h1,
-.page-header h2 {
-    flex: 1;
-    margin: 0;
 }
 
 .nav-layout,
@@ -309,8 +300,16 @@ textarea {
         padding: 18px;
     }
 
+    .container {
+        padding-top: 58px;
+    }
+
+    .home-link {
+        top: 16px;
+        right: 18px;
+    }
+
     .nav-layout,
-    .page-header,
     .content-wrapper {
         display: block;
     }
