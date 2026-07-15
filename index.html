@@ -4,21 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome SKALA</title>
-    <link rel="stylesheet" href="./output/resources/sheet.css">  
+    <title>나의 개인포털 메인</title>
 </head>
 <body>
     <div class="container">
-        <img src="./resources/skala.jpeg" alt="SKALA" width="50" height="50"> <h1>환영 인사</h1>
-        <p>스칼라에 오신 것을 환영합니다.</p>
-        <br>
-        <ul>
-            <li><a href="./myClass.html" style="font-size: 25px;">나의 수업 (myClass)</a></li>
-            <li><a href="./Holiday.html" style="font-size: 25px;">나의 휴일 (myHoliday)</a></li>
-            <li><a href="./myProfile.html" style="font-size: 25px;">나의 프로필 (myProfile)</a></li>
-        </ul>
+        <header>
+            <img src="./resources/skala.jpeg" alt="SKALA" width="50" height="50"> <h1>나의 유니버스</h1>
+            <p>저의 프로필, 학습내용, 여행 기록을 모아둔 Hub 페이지입니다.</p>
+            <details>
+                <summary>이 사이트 소개 보기</summary>
+                <p>나의 수업, 휴일 일과, 프로필, 여행 앨범, 회원가입 페이지를 한 곳에서 이동할 수 있는 개인 포털입니다.</p>
+            </details>
+            <br>
+            <a href="./output/4개반 시간표_260710.html" style="font-size: 14px;">2026 하계 SKALA 일정 Click!</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">홈</a></li>
+                <li><a href="./myClass.html">나의 수업 (myClass)</a></li>
+                <li><a href="./Holiday.html">나의 휴일 (myHoliday)</a></li>
+                <li><a href="./myProfile.html">나의 프로필 (myProfile)</a></li>
+                <li><a href="./myTrip.html">나의 여행 앨범 (myTrip)</a></li>
+                <li><a href="./signUp.html">회원가입 (Sign Up)</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <div class="content-wrapper">
+            <main>
+                <h2>📌 오늘의 주요 소식</h2>
+
+                <section>
+                    <h3>최근 공지 및 업데이트</h3>
+                    <article>
+                        <h4>[업데이트] 여행 앨범에 동영상 추가 완료!</h4>
+                        <p>도쿄의 랜드마크, 도쿄타워 사진이 새롭게 추가되었습니다!.</p>
+                        <p>작성일: <time datetime="2026-07-15">2026년 7월 15일</time></p>
+                    </article>
+                </section>
+
+                <section>
+                    <h3>📸 이달의 베스트 컷</h3>
+                    <figure>
+                        <img src="../media/tokyo.jpg" width="300" height="150" alt="도쿄 타워">
+                        <figcaption>일본 도쿄의 상징적 건물, <mark>도쿄타워</mark></figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <details>
+                        <summary>📷 작년의 베스트 컷 보기</summary>
+                        <figure>
+                            <img src="../media/osaka.jpg" width="300" height="150" alt="오사카">
+                            <figcaption>작년에 기억에 남았던 오사카 여행 사진입니다.</figcaption>
+                        </figure>
+                    </details>
+                </section>
+            </main>
+
+            <aside>
+                <h2>🌤️ 실시간 정보</h2>
+                <p>현재 위치: 광주광역시 광산구 📍</p>
+            </aside>
+        </div>
+        <hr>
+
+        <footer>
+            <p>이메일 문의: songg9572@gmail.com | 추천 학습 사이트: <a href="https://www.w3schools.com" target="_blank">W3Schools</a></p>
+            <p><small>© 2026 jeong-gu 포트폴리오. 모든 태그는 웹 표준 시맨틱 태그로 작성되었습니다.</small></p>
+        </footer>
         
-        <a href="./output/4개반 시간표_260710.html" style="font-size: 25px;">지금 바로 2026 하계 SKALA 일정을 확인해보세요.</a>
 
     </div>
 </html>
