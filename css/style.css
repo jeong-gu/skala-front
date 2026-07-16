@@ -241,6 +241,36 @@ footer {
     font-size: 20px;
 }
 
+.practice-panel {
+    margin-top: 24px;
+}
+
+.practice-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.practice-button {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid rgba(103, 232, 249, 0.28);
+    border-radius: 10px;
+    color: #e5eefb;
+    background-color: rgba(2, 6, 23, 0.72);
+    box-shadow: 0 4px 10px rgba(8, 13, 31, 0.22);
+    cursor: pointer;
+    transition: color 0.35s ease, background-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.practice-button:hover {
+    color: #ffffff;
+    background-color: #2563eb;
+    box-shadow: 0 12px 24px rgba(34, 211, 238, 0.2);
+    transform: translateY(-3px);
+}
+
 .trip-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
