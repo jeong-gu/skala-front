@@ -173,6 +173,15 @@ footer {
     transform: translateY(-4px) scale(1.03);
 }
 
+.result-link-list li {
+    flex: 1 1 calc(25% - 12px);
+}
+
+.result-link-list a {
+    height: 100%;
+    text-align: center;
+}
+
 .content-wrapper {
     display: flex;
     gap: 24px;
@@ -411,6 +420,10 @@ textarea {
 
     .shortcut-list a {
         width: 100%;
+    }
+
+    .result-link-list li {
+        flex-basis: 100%;
     }
 
     h1 {
