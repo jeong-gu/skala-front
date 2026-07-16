@@ -30,7 +30,20 @@ jobs:
         run: |
           mkdir -p _site
           cp -R css html media script _site/
-          cp index.html _site/index.html
+          printf '%s\n' \
+            '<!DOCTYPE html>' \
+            '<html lang="ko">' \
+            '<head>' \
+            '  <meta charset="UTF-8">' \
+            '  <meta name="viewport" content="width=device-width, initial-scale=1.0">' \
+            '  <meta http-equiv="refresh" content="0; url=./html/index.html">' \
+            '  <title>나의 유니버스</title>' \
+            '</head>' \
+            '<body>' \
+            '  <p><a href="./html/index.html">나의 유니버스로 이동하기</a></p>' \
+            '</body>' \
+            '</html>' > _site/index.html
+          test -f _site/index.html
           test -f _site/html/index.html
           test -f _site/css/style.css
 
