@@ -255,6 +255,26 @@ footer {
     font-size: 20px;
 }
 
+.weather-panel {
+    margin-top: 24px;
+}
+
+.weather-panel label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    font-weight: 700;
+}
+
+#weather-box {
+    margin-top: 12px;
+    padding: 14px;
+    border: 1px solid rgba(103, 232, 249, 0.24);
+    border-radius: 10px;
+    background-color: rgba(2, 6, 23, 0.6);
+    color: #e5eefb;
+}
+
 .practice-panel {
     margin-top: 24px;
 }
