@@ -116,7 +116,20 @@ td {
 }
 
 .class-schedule tbody td {
+    position: relative;
     transition: color 0.35s ease, background-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.class-schedule tbody td > a::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    cursor: pointer;
+}
+
+.class-schedule tbody td > a:focus-visible::after {
+    outline: 3px solid #22d3ee;
+    outline-offset: -4px;
 }
 
 .class-schedule tbody td:hover {
