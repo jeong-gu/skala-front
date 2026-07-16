@@ -28,9 +28,37 @@ function renderCityInfo(city) {
         "🧭 경도: " + city.lon;
 }
 
-citySelect.addEventListener("change", function () {
+async function renderWeather(city) {
+    var url = "https://api.open-meteo.com/v1/forecast?latitude=" + city.lat + "&longitude=" + city.lon + "&current=temperature_2m,relative_humidity_2m";
+
+    weatherBox.innerHTML =
+        "<strong>" + city.name + "</strong><br>" +
+        "📍 위도: " + city.lat + "<br>" +
+        "🧭 경도: " + city.lon + "<br><br>" +
+        "로딩 중… ⏳";
+
+    try {
+        var response = await fetch(url);
+        var data = await response.json();
+        var temperature = data.current.temperature_2m;
+        var humidity = data.current.relative_humidity_2m;
+
+        weatherBox.innerHTML =
+            "<strong>" + city.name + "</strong><br>" +
+            "📍 위도: " + city.lat + "<br>" +
+            "🧭 경도: " + city.lon + "<br><br>" +
+            "현재 온도: " + temperature + "°C<br>" +
+            "현재 습도: " + humidity + "%";
+    } catch (error) {
+        weatherBox.innerHTML =
+            "<strong>" + city.name + "</strong><br>" +
+            "날씨 정보를 불러오지 못했습니다.";
+    }
+}
+
+citySelect.addEventListener("change", async function () {
     var selectedCity = findCity(citySelect.value);
-    renderCityInfo(selectedCity);
+    await renderWeather(selectedCity);
 });
 
-renderCityInfo(findCity(citySelect.value));
+renderWeather(findCity(citySelect.value));
