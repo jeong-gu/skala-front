@@ -9,6 +9,10 @@ body {
     background-color: #edf4ff;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     color: #123c69;
     font-size: 34px;
@@ -318,7 +322,7 @@ textarea {
     transform: translateY(1px);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 786px) {
     .container,
     footer {
         margin: 16px;
@@ -334,12 +338,49 @@ textarea {
         right: 18px;
     }
 
-    .nav-layout,
     .content-wrapper {
-        display: block;
+        flex-direction: column;
+    }
+
+    .content-wrapper aside {
+        width: 100%;
+    }
+
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shortcut-list {
+        flex-direction: column;
+    }
+
+    .shortcut-list a {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
     }
 
     table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
         font-size: 14px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-submit,
+    .btn-reset {
+        width: 100%;
+        margin: 8px 0 0;
     }
 }
