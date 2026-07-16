@@ -142,8 +142,7 @@ td {
     color: #ffffff;
 }
 
-img,
-video {
+img, video {
     max-width: 100%;
     border-radius: 8px;
 }
@@ -404,10 +403,7 @@ legend {
     padding: 0 10px;
 }
 
-input,
-select,
-textarea,
-button {
+input, select, textarea, button {
     font-family: inherit;
     font-size: 15px;
 }
@@ -422,9 +418,7 @@ form p > label[for] {
     font-weight: 600;
 }
 
-input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]),
-select,
-textarea {
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]), select, textarea {
     width: 100%;
     min-width: 0;
     padding: 12px 14px;
@@ -435,13 +429,11 @@ textarea {
     background-color: rgba(2, 6, 23, 0.72);
 }
 
-input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]),
-select {
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]), select {
     min-height: 44px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
     margin-right: 6px;
 }
 
@@ -460,8 +452,7 @@ textarea {
     width: 100%;
 }
 
-.btn-submit,
-.btn-reset {
+.btn-submit, .btn-reset {
     min-height: 46px;
     margin-right: 10px;
     padding: 12px 24px;
@@ -494,8 +485,7 @@ textarea {
     transform: translateY(-4px) scale(1.03);
 }
 
-.btn-submit:active,
-.btn-reset:active {
+.btn-submit:active, .btn-reset:active {
     transform: translateY(1px);
 }
 
