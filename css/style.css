@@ -351,6 +351,11 @@ footer {
     font-size: 14px;
 }
 
+.trip-vlog-video {
+    display: block;
+    margin: 0 auto;
+}
+
 .profile-list {
     padding: 16px 16px 16px 36px;
     border-radius: 8px;
